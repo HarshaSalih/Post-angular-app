@@ -10,7 +10,7 @@ export class ViewPostComponent {
 
   constructor(private api:ApiService)
   {
-    api.fetchCourses().subscribe(
+    api.fetchPost().subscribe(
       (response)=>{
         this.post=response;
       }
